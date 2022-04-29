@@ -28,7 +28,7 @@ class OddsCalculatorTest {
         String actual = calculator.calculateFractional(decimalOdd);
 
         //then
-        String expected = "2/3";
+        String expected = "93/50";
         assertEquals(expected, actual);
     }
 
