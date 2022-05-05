@@ -20,7 +20,7 @@ class OddsCalculatorTest {
     }
 
     @Test
-    void simpleNumberCase() {
+    void twoEightySixCase() {
         //given
         double decimalOdd = 2.86;
 
