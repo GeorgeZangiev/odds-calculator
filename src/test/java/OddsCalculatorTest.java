@@ -44,4 +44,46 @@ class OddsCalculatorTest {
         String expected = "99/100";
         assertEquals(expected, actual);
     }
+
+    @Test
+    void OneToOneCase() {
+        //given
+        String oddDown = "1";
+        String oddUp = "1";
+
+        //when
+        String actual = calculator.calculateDecimal(oddUp, oddDown);
+
+        //then
+        String expected = "2";
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void ThirtyThreeToOneHundredCase() {
+        //given
+        String oddDown = "100";
+        String oddUp = "33";
+
+        //when
+        String actual = calculator.calculateDecimal(oddUp, oddDown);
+
+        //then
+        String expected = "1.33";
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void OneHundredToOneCase() {
+        //given
+        String oddDown = "1";
+        String oddUp = "100";
+
+        //when
+        String actual = calculator.calculateDecimal(oddUp, oddDown);
+
+        //then
+        String expected = "101";
+        assertEquals(expected, actual);
+    }
 }
