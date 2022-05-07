@@ -9,7 +9,7 @@ class OddsCalculatorTest {
     @Test
     void twoTwentyFiveCase() {
         //given
-        double decimalOdd = 2.25;
+        String decimalOdd = "2.25";
 
         //when
         String actual = calculator.calculateFractional(decimalOdd);
@@ -22,7 +22,7 @@ class OddsCalculatorTest {
     @Test
     void twoEightySixCase() {
         //given
-        double decimalOdd = 2.86;
+        String decimalOdd = "2.86";
 
         //when
         String actual = calculator.calculateFractional(decimalOdd);
@@ -35,7 +35,7 @@ class OddsCalculatorTest {
     @Test
     void OneNinetyNineCase() {
         //given
-        double decimalOdd = 1.99;
+        String decimalOdd = "1.99";
 
         //when
         String actual = calculator.calculateFractional(decimalOdd);
